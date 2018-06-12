@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "OutgoingViewController.buttonClickSave(UIButton) -&gt; ():OutgoingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "buttonArrivalTime.titleLabel?.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Global.apiUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.supplementaryView(viewOnDayView : CVCalendarDayView) -&gt; UIView:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "newView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.addSchduleClick(Any) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectDay">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OutgoingViewController.(buttonClickSave(UIButton) -&gt; ()).(closure #1):OutgoingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "result[&quot;Result&quot;] as? String">
+            </PersistentString>
+            <PersistentString
+               value = "result[&quot;ErrorMsg&quot;] as? String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CVCalendarView.calendarDelegate.setter:CVCalendarView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "calendarDelegate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(viewDidLoad() -&gt; ()).(closure #1):ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "clsRestful.(makePostRequest(String, postData : [String : Any], onSuccess : (Any) -&gt; (), onError : (String) -&gt; ()) -&gt; ()).(closure #1):clsRestful.swift">
+      </ContextState>
+      <ContextState
+         contextName = "clsOutGoingList.getOutGoingCount(date : String) -&gt; Int:clsOutgoing.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "OutGoingList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "clsRestful.(getJsonData(String, onSuccess : (Any) -&gt; (), onError : (String) -&gt; ()) -&gt; ()).(closure #1):clsRestful.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.supplementaryView(shouldDisplayOnDayView : CVCalendarDayView) -&gt; Bool:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "outGoingList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CardTimeList.init(json : [String : Any]) -&gt; CardTimeList:CardTimeList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;CardTimeList&quot;] ">
+            </PersistentString>
+            <PersistentString
+               value = "json[&quot;EmployeeNo&quot;] as? String">
+            </PersistentString>
+            <PersistentString
+               value = "json[&quot;CardTimeList&quot;] as? MutableArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "clsOutGoingList.getOUtGoingData(date : String) -&gt; clsOutgoing?:clsOutgoing.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "outGoingData.m_outDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CVCalendarMenuView.createDaySymbols() -&gt; ():CVCalendarMenuView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.frame.width / 7 - space">
+            </PersistentString>
+            <PersistentString
+               value = "self.frame.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.didSelectDayView(CVCalendarDayView, animationDidFinish : Bool) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dayView.date">
+            </PersistentString>
+            <PersistentString
+               value = "finalDate">
+            </PersistentString>
+            <PersistentString
+               value = "tableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(UITableView, canEditRowAt : IndexPath) -&gt; Bool:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "getTodayString()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(viewDidLoad() -&gt; ()).(closure #1).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.calendarView.contentController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.init(coder : NSCoder) -&gt; ViewController?:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "monthLabel">
+            </PersistentString>
+            <PersistentString
+               value = "calendarView">
+            </PersistentString>
+            <PersistentString
+               value = "tableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

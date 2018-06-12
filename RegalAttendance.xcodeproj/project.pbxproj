@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79ACE881BD87780B3474C52F /* Pods_RegalAttendanceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46858E00D27718C9B6E5A357 /* Pods_RegalAttendanceUITests.framework */; };
+		96F46614B30AEC69DFD456CB /* Pods_RegalAttendance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A938E50B26C1805372A68871 /* Pods_RegalAttendance.framework */; };
+		D505946A1F69325B0009724F /* RefreshDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50594691F69325B0009724F /* RefreshDelegate.swift */; };
+		D5771B1D1F66E3CB0037A8B7 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5771B1C1F66E3CB0037A8B7 /* SwiftSpinner.swift */; };
+		D5771B201F66E4D00037A8B7 /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5771B1F1F66E4D00037A8B7 /* LoginUser.swift */; };
+		D59A99D71F67D38C00515631 /* OutgoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A99D61F67D38C00515631 /* OutgoingViewController.swift */; };
+		D59A99D91F67D42A00515631 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59A99D81F67D42A00515631 /* DatePickerDialog.swift */; };
+		D5CB2BBB1F6815F20000DFD2 /* CardTimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB2BBA1F6815F20000DFD2 /* CardTimeData.swift */; };
+		D5CB2BBD1F6816450000DFD2 /* CardTimeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB2BBC1F6816450000DFD2 /* CardTimeList.swift */; };
+		D5CB2BBF1F6826020000DFD2 /* UITableViewCellCanlendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB2BBE1F6826020000DFD2 /* UITableViewCellCanlendar.swift */; };
+		D5D9E56C1FFB7A200076B9E5 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D9E56B1FFB7A200076B9E5 /* UserNotifications.framework */; };
+		F3C1BB9E1C6455E1008CE7D2 /* clsAttendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1BB9D1C6455E1008CE7D2 /* clsAttendance.swift */; };
+		F3DB3E281C6445CE008EC0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB3E271C6445CE008EC0D0 /* AppDelegate.swift */; };
+		F3DB3E2A1C6445CE008EC0D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB3E291C6445CE008EC0D0 /* ViewController.swift */; };
+		F3DB3E2D1C6445CE008EC0D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E2B1C6445CE008EC0D0 /* Main.storyboard */; };
+		F3DB3E2F1C6445CE008EC0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E2E1C6445CE008EC0D0 /* Assets.xcassets */; };
+		F3DB3E321C6445CE008EC0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E301C6445CE008EC0D0 /* LaunchScreen.storyboard */; };
+		F3DB3E3D1C6445CE008EC0D0 /* RegalAttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB3E3C1C6445CE008EC0D0 /* RegalAttendanceUITests.swift */; };
+		F3DB3E571C644658008EC0D0 /* AttendanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB3E471C644658008EC0D0 /* AttendanceCell.swift */; };
+		F3DB3E581C644658008EC0D0 /* clsGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB3E481C644658008EC0D0 /* clsGlobal.swift */; };
+		F3DB3E591C644658008EC0D0 /* clsOutgoing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB3E491C644658008EC0D0 /* clsOutgoing.swift */; };
+		F3DB3E5A1C644658008EC0D0 /* clsRestful.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB3E4A1C644658008EC0D0 /* clsRestful.swift */; };
+		F3DB3E5B1C644658008EC0D0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB3E4B1C644658008EC0D0 /* LoginVC.swift */; };
+		F3DB3E5C1C644658008EC0D0 /* logout.ico in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E4C1C644658008EC0D0 /* logout.ico */; };
+		F3DB3E5D1C644658008EC0D0 /* offduty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E4D1C644658008EC0D0 /* offduty.jpg */; };
+		F3DB3E5E1C644658008EC0D0 /* onduty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E4E1C644658008EC0D0 /* onduty.jpg */; };
+		F3DB3E5F1C644658008EC0D0 /* outside-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E4F1C644658008EC0D0 /* outside-icon.png */; };
+		F3DB3E601C644658008EC0D0 /* outside.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E501C644658008EC0D0 /* outside.png */; };
+		F3DB3E611C644658008EC0D0 /* outsideAzure.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E511C644658008EC0D0 /* outsideAzure.png */; };
+		F3DB3E621C644658008EC0D0 /* regal.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E521C644658008EC0D0 /* regal.png */; };
+		F3DB3E641C644658008EC0D0 /* system-time.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DB3E541C644658008EC0D0 /* system-time.png */; };
+		F3DB3E661C644658008EC0D0 /* UIViewControlAttenadance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB3E561C644658008EC0D0 /* UIViewControlAttenadance.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3DB3E391C6445CE008EC0D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3DB3E1C1C6445CE008EC0D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3DB3E231C6445CE008EC0D0;
+			remoteInfo = RegalAttendance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1644160F721F84EF92904FF5 /* Pods-RegalAttendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegalAttendance.release.xcconfig"; path = "Pods/Target Support Files/Pods-RegalAttendance/Pods-RegalAttendance.release.xcconfig"; sourceTree = "<group>"; };
+		46858E00D27718C9B6E5A357 /* Pods_RegalAttendanceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegalAttendanceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810AC66C0052EA94FD84F6C8 /* Pods-RegalAttendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegalAttendance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RegalAttendance/Pods-RegalAttendance.debug.xcconfig"; sourceTree = "<group>"; };
+		9E911CD6DB7F4DCF4C7C7B23 /* Pods-RegalAttendanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegalAttendanceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RegalAttendanceUITests/Pods-RegalAttendanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A938E50B26C1805372A68871 /* Pods_RegalAttendance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegalAttendance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50594691F69325B0009724F /* RefreshDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshDelegate.swift; sourceTree = "<group>"; };
+		D5771B1C1F66E3CB0037A8B7 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
+		D5771B1F1F66E4D00037A8B7 /* LoginUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
+		D59A99D61F67D38C00515631 /* OutgoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingViewController.swift; sourceTree = "<group>"; };
+		D59A99D81F67D42A00515631 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		D5CB2BBA1F6815F20000DFD2 /* CardTimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTimeData.swift; sourceTree = "<group>"; };
+		D5CB2BBC1F6816450000DFD2 /* CardTimeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTimeList.swift; sourceTree = "<group>"; };
+		D5CB2BBE1F6826020000DFD2 /* UITableViewCellCanlendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellCanlendar.swift; sourceTree = "<group>"; };
+		D5D9E56A1FFB70F40076B9E5 /* 帝商差勤.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "帝商差勤.entitlements"; sourceTree = "<group>"; };
+		D5D9E56B1FFB7A200076B9E5 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		EF204937402FF5E7AE5E3302 /* Pods-RegalAttendanceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegalAttendanceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RegalAttendanceUITests/Pods-RegalAttendanceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3C1BB9D1C6455E1008CE7D2 /* clsAttendance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clsAttendance.swift; sourceTree = "<group>"; };
+		F3DB3E241C6445CE008EC0D0 /* 帝商差勤.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "帝商差勤.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DB3E271C6445CE008EC0D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3DB3E291C6445CE008EC0D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3DB3E2C1C6445CE008EC0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3DB3E2E1C6445CE008EC0D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3DB3E311C6445CE008EC0D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3DB3E331C6445CE008EC0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DB3E381C6445CE008EC0D0 /* RegalAttendanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegalAttendanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DB3E3C1C6445CE008EC0D0 /* RegalAttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegalAttendanceUITests.swift; sourceTree = "<group>"; };
+		F3DB3E3E1C6445CE008EC0D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DB3E471C644658008EC0D0 /* AttendanceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceCell.swift; sourceTree = "<group>"; };
+		F3DB3E481C644658008EC0D0 /* clsGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clsGlobal.swift; sourceTree = "<group>"; };
+		F3DB3E491C644658008EC0D0 /* clsOutgoing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clsOutgoing.swift; sourceTree = "<group>"; };
+		F3DB3E4A1C644658008EC0D0 /* clsRestful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clsRestful.swift; sourceTree = "<group>"; };
+		F3DB3E4B1C644658008EC0D0 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F3DB3E4C1C644658008EC0D0 /* logout.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = logout.ico; sourceTree = "<group>"; };
+		F3DB3E4D1C644658008EC0D0 /* offduty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = offduty.jpg; sourceTree = "<group>"; };
+		F3DB3E4E1C644658008EC0D0 /* onduty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = onduty.jpg; sourceTree = "<group>"; };
+		F3DB3E4F1C644658008EC0D0 /* outside-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outside-icon.png"; sourceTree = "<group>"; };
+		F3DB3E501C644658008EC0D0 /* outside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outside.png; sourceTree = "<group>"; };
+		F3DB3E511C644658008EC0D0 /* outsideAzure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outsideAzure.png; sourceTree = "<group>"; };
+		F3DB3E521C644658008EC0D0 /* regal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = regal.png; sourceTree = "<group>"; };
+		F3DB3E541C644658008EC0D0 /* system-time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "system-time.png"; sourceTree = "<group>"; };
+		F3DB3E561C644658008EC0D0 /* UIViewControlAttenadance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControlAttenadance.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3DB3E211C6445CE008EC0D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D9E56C1FFB7A200076B9E5 /* UserNotifications.framework in Frameworks */,
+				96F46614B30AEC69DFD456CB /* Pods_RegalAttendance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DB3E351C6445CE008EC0D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79ACE881BD87780B3474C52F /* Pods_RegalAttendanceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A56D7A717838995317D702A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9E56B1FFB7A200076B9E5 /* UserNotifications.framework */,
+				A938E50B26C1805372A68871 /* Pods_RegalAttendance.framework */,
+				46858E00D27718C9B6E5A357 /* Pods_RegalAttendanceUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4B506D8137D76FB7C4E83BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				810AC66C0052EA94FD84F6C8 /* Pods-RegalAttendance.debug.xcconfig */,
+				1644160F721F84EF92904FF5 /* Pods-RegalAttendance.release.xcconfig */,
+				9E911CD6DB7F4DCF4C7C7B23 /* Pods-RegalAttendanceUITests.debug.xcconfig */,
+				EF204937402FF5E7AE5E3302 /* Pods-RegalAttendanceUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5771B1E1F66E4B70037A8B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB3E491C644658008EC0D0 /* clsOutgoing.swift */,
+				D5771B1F1F66E4D00037A8B7 /* LoginUser.swift */,
+				D5CB2BBA1F6815F20000DFD2 /* CardTimeData.swift */,
+				D5CB2BBC1F6816450000DFD2 /* CardTimeList.swift */,
+				D50594691F69325B0009724F /* RefreshDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F3C1BB9C1C6452C1008CE7D2 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB3E541C644658008EC0D0 /* system-time.png */,
+				F3DB3E4C1C644658008EC0D0 /* logout.ico */,
+				F3DB3E4D1C644658008EC0D0 /* offduty.jpg */,
+				F3DB3E4E1C644658008EC0D0 /* onduty.jpg */,
+				F3DB3E4F1C644658008EC0D0 /* outside-icon.png */,
+				F3DB3E501C644658008EC0D0 /* outside.png */,
+				F3DB3E511C644658008EC0D0 /* outsideAzure.png */,
+				F3DB3E521C644658008EC0D0 /* regal.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		F3DB3E1B1C6445CE008EC0D0 = {
+			isa = PBXGroup;
+			children = (
+				F3DB3E261C6445CE008EC0D0 /* RegalAttendance */,
+				F3DB3E3B1C6445CE008EC0D0 /* RegalAttendanceUITests */,
+				F3DB3E251C6445CE008EC0D0 /* Products */,
+				C4B506D8137D76FB7C4E83BE /* Pods */,
+				A56D7A717838995317D702A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3DB3E251C6445CE008EC0D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB3E241C6445CE008EC0D0 /* 帝商差勤.app */,
+				F3DB3E381C6445CE008EC0D0 /* RegalAttendanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3DB3E261C6445CE008EC0D0 /* RegalAttendance */ = {
+			isa = PBXGroup;
+			children = (
+				D5D9E56A1FFB70F40076B9E5 /* 帝商差勤.entitlements */,
+				D5771B1E1F66E4B70037A8B7 /* Model */,
+				F3C1BB9C1C6452C1008CE7D2 /* Image */,
+				F3DB3E471C644658008EC0D0 /* AttendanceCell.swift */,
+				D59A99D61F67D38C00515631 /* OutgoingViewController.swift */,
+				D5771B1C1F66E3CB0037A8B7 /* SwiftSpinner.swift */,
+				D59A99D81F67D42A00515631 /* DatePickerDialog.swift */,
+				F3DB3E481C644658008EC0D0 /* clsGlobal.swift */,
+				F3DB3E4A1C644658008EC0D0 /* clsRestful.swift */,
+				F3DB3E4B1C644658008EC0D0 /* LoginVC.swift */,
+				F3DB3E561C644658008EC0D0 /* UIViewControlAttenadance.swift */,
+				F3DB3E271C6445CE008EC0D0 /* AppDelegate.swift */,
+				F3DB3E291C6445CE008EC0D0 /* ViewController.swift */,
+				D5CB2BBE1F6826020000DFD2 /* UITableViewCellCanlendar.swift */,
+				F3DB3E2B1C6445CE008EC0D0 /* Main.storyboard */,
+				F3DB3E2E1C6445CE008EC0D0 /* Assets.xcassets */,
+				F3DB3E301C6445CE008EC0D0 /* LaunchScreen.storyboard */,
+				F3DB3E331C6445CE008EC0D0 /* Info.plist */,
+				F3C1BB9D1C6455E1008CE7D2 /* clsAttendance.swift */,
+			);
+			path = RegalAttendance;
+			sourceTree = "<group>";
+		};
+		F3DB3E3B1C6445CE008EC0D0 /* RegalAttendanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB3E3C1C6445CE008EC0D0 /* RegalAttendanceUITests.swift */,
+				F3DB3E3E1C6445CE008EC0D0 /* Info.plist */,
+			);
+			path = RegalAttendanceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3DB3E231C6445CE008EC0D0 /* RegalAttendance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3DB3E411C6445CE008EC0D0 /* Build configuration list for PBXNativeTarget "RegalAttendance" */;
+			buildPhases = (
+				DDA7521D45D066AD7D8B72B1 /* [CP] Check Pods Manifest.lock */,
+				F3DB3E201C6445CE008EC0D0 /* Sources */,
+				F3DB3E211C6445CE008EC0D0 /* Frameworks */,
+				F3DB3E221C6445CE008EC0D0 /* Resources */,
+				4EE81DC7FAA49987E7AEFC83 /* [CP] Embed Pods Frameworks */,
+				3EB4FFC7ADEC369DC0532B5A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RegalAttendance;
+			productName = RegalAttendance;
+			productReference = F3DB3E241C6445CE008EC0D0 /* 帝商差勤.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3DB3E371C6445CE008EC0D0 /* RegalAttendanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3DB3E441C6445CE008EC0D0 /* Build configuration list for PBXNativeTarget "RegalAttendanceUITests" */;
+			buildPhases = (
+				74E34120C9C6A2FD8B2FFD66 /* [CP] Check Pods Manifest.lock */,
+				F3DB3E341C6445CE008EC0D0 /* Sources */,
+				F3DB3E351C6445CE008EC0D0 /* Frameworks */,
+				F3DB3E361C6445CE008EC0D0 /* Resources */,
+				69C35C5E9C074511D21EBB30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3DB3E3A1C6445CE008EC0D0 /* PBXTargetDependency */,
+			);
+			name = RegalAttendanceUITests;
+			productName = RegalAttendanceUITests;
+			productReference = F3DB3E381C6445CE008EC0D0 /* RegalAttendanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3DB3E1C1C6445CE008EC0D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Regal System";
+				TargetAttributes = {
+					F3DB3E231C6445CE008EC0D0 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GD9579ZT9J;
+						LastSwiftMigration = 0830;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					F3DB3E371C6445CE008EC0D0 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GD9579ZT9J;
+						LastSwiftMigration = 0830;
+						TestTargetID = F3DB3E231C6445CE008EC0D0;
+					};
+				};
+			};
+			buildConfigurationList = F3DB3E1F1C6445CE008EC0D0 /* Build configuration list for PBXProject "RegalAttendance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3DB3E1B1C6445CE008EC0D0;
+			productRefGroup = F3DB3E251C6445CE008EC0D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3DB3E231C6445CE008EC0D0 /* RegalAttendance */,
+				F3DB3E371C6445CE008EC0D0 /* RegalAttendanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3DB3E221C6445CE008EC0D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DB3E321C6445CE008EC0D0 /* LaunchScreen.storyboard in Resources */,
+				F3DB3E5C1C644658008EC0D0 /* logout.ico in Resources */,
+				F3DB3E5E1C644658008EC0D0 /* onduty.jpg in Resources */,
+				F3DB3E601C644658008EC0D0 /* outside.png in Resources */,
+				F3DB3E2F1C6445CE008EC0D0 /* Assets.xcassets in Resources */,
+				F3DB3E641C644658008EC0D0 /* system-time.png in Resources */,
+				F3DB3E5D1C644658008EC0D0 /* offduty.jpg in Resources */,
+				F3DB3E611C644658008EC0D0 /* outsideAzure.png in Resources */,
+				F3DB3E621C644658008EC0D0 /* regal.png in Resources */,
+				F3DB3E2D1C6445CE008EC0D0 /* Main.storyboard in Resources */,
+				F3DB3E5F1C644658008EC0D0 /* outside-icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DB3E361C6445CE008EC0D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EB4FFC7ADEC369DC0532B5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RegalAttendance/Pods-RegalAttendance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EE81DC7FAA49987E7AEFC83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RegalAttendance/Pods-RegalAttendance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69C35C5E9C074511D21EBB30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RegalAttendanceUITests/Pods-RegalAttendanceUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74E34120C9C6A2FD8B2FFD66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DDA7521D45D066AD7D8B72B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3DB3E201C6445CE008EC0D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D505946A1F69325B0009724F /* RefreshDelegate.swift in Sources */,
+				F3DB3E571C644658008EC0D0 /* AttendanceCell.swift in Sources */,
+				F3C1BB9E1C6455E1008CE7D2 /* clsAttendance.swift in Sources */,
+				D5CB2BBF1F6826020000DFD2 /* UITableViewCellCanlendar.swift in Sources */,
+				D5CB2BBD1F6816450000DFD2 /* CardTimeList.swift in Sources */,
+				F3DB3E581C644658008EC0D0 /* clsGlobal.swift in Sources */,
+				F3DB3E5B1C644658008EC0D0 /* LoginVC.swift in Sources */,
+				D59A99D91F67D42A00515631 /* DatePickerDialog.swift in Sources */,
+				D5771B201F66E4D00037A8B7 /* LoginUser.swift in Sources */,
+				F3DB3E661C644658008EC0D0 /* UIViewControlAttenadance.swift in Sources */,
+				D5771B1D1F66E3CB0037A8B7 /* SwiftSpinner.swift in Sources */,
+				F3DB3E5A1C644658008EC0D0 /* clsRestful.swift in Sources */,
+				F3DB3E2A1C6445CE008EC0D0 /* ViewController.swift in Sources */,
+				D5CB2BBB1F6815F20000DFD2 /* CardTimeData.swift in Sources */,
+				F3DB3E591C644658008EC0D0 /* clsOutgoing.swift in Sources */,
+				F3DB3E281C6445CE008EC0D0 /* AppDelegate.swift in Sources */,
+				D59A99D71F67D38C00515631 /* OutgoingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DB3E341C6445CE008EC0D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DB3E3D1C6445CE008EC0D0 /* RegalAttendanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3DB3E3A1C6445CE008EC0D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3DB3E231C6445CE008EC0D0 /* RegalAttendance */;
+			targetProxy = F3DB3E391C6445CE008EC0D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3DB3E2B1C6445CE008EC0D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3DB3E2C1C6445CE008EC0D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3DB3E301C6445CE008EC0D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3DB3E311C6445CE008EC0D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3DB3E3F1C6445CE008EC0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3DB3E401C6445CE008EC0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3DB3E421C6445CE008EC0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 810AC66C0052EA94FD84F6C8 /* Pods-RegalAttendance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = "RegalAttendance/帝商差勤.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = GD9579ZT9J;
+				INFOPLIST_FILE = RegalAttendance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Regalscan.com.RegalAttendance;
+				PRODUCT_NAME = "帝商差勤";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3DB3E431C6445CE008EC0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1644160F721F84EF92904FF5 /* Pods-RegalAttendance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_ENTITLEMENTS = "RegalAttendance/帝商差勤.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = GD9579ZT9J;
+				INFOPLIST_FILE = RegalAttendance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Regalscan.com.RegalAttendance;
+				PRODUCT_NAME = "帝商差勤";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F3DB3E451C6445CE008EC0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E911CD6DB7F4DCF4C7C7B23 /* Pods-RegalAttendanceUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = RegalAttendanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = regalscan.com.RegalAttendanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RegalAttendance;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F3DB3E461C6445CE008EC0D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF204937402FF5E7AE5E3302 /* Pods-RegalAttendanceUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = RegalAttendanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = regalscan.com.RegalAttendanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RegalAttendance;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3DB3E1F1C6445CE008EC0D0 /* Build configuration list for PBXProject "RegalAttendance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DB3E3F1C6445CE008EC0D0 /* Debug */,
+				F3DB3E401C6445CE008EC0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3DB3E411C6445CE008EC0D0 /* Build configuration list for PBXNativeTarget "RegalAttendance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DB3E421C6445CE008EC0D0 /* Debug */,
+				F3DB3E431C6445CE008EC0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3DB3E441C6445CE008EC0D0 /* Build configuration list for PBXNativeTarget "RegalAttendanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DB3E451C6445CE008EC0D0 /* Debug */,
+				F3DB3E461C6445CE008EC0D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3DB3E1C1C6445CE008EC0D0 /* Project object */;
+}

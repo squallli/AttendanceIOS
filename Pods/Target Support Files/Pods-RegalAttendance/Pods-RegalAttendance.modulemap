@@ -1,0 +1,6 @@
+framework module Pods_RegalAttendance {
+  umbrella header "Pods-RegalAttendance-umbrella.h"
+
+  export *
+  module * { export * }
+}
